@@ -14,7 +14,7 @@ namespace Calculadora_IEE754
 
             Console.WriteLine("\n\n\tPADRÃO IEEE4754");
 
-            Console.Write("Digite um valor com inteiro com casas decimais: ");
+            Console.Write("\tDigite um valor com inteiro com casas decimais: ");
             num = Convert.ToDouble(Console.ReadLine());
 
             // ALGORITMO PARA DIVIDIR PARTE INTEIRA DE DECIMAL
@@ -41,8 +41,8 @@ namespace Calculadora_IEE754
                 cont++;
             }while(res > 0);
 
-            Console.WriteLine("Cont: " + cont);
-            Console.WriteLine("Binário da parteira inteira: " + binarioInteiro);
+            // Console.WriteLine("Cont: " + cont);
+            // Console.WriteLine("Binário da parteira inteira: " + binarioInteiro);
 
             // CONVERTER NÚMERO DECIMAL EM BINÁRIO
             res1 = numDecimal;
@@ -65,7 +65,7 @@ namespace Calculadora_IEE754
                 }
             }
 
-            Console.WriteLine("Binário da parteira decimal: " + binarioDecimal);
+            // Console.WriteLine("Binário da parteira decimal: " + binarioDecimal);
 
             int expoente = (cont - 1) + 127;
             res2 = expoente;
@@ -84,8 +84,8 @@ namespace Calculadora_IEE754
                 cont++;
             }while(res2 > 0);
 
-            Console.WriteLine("Expoente: " + expoente);
-            Console.WriteLine("Binário expoente: " + binarioExpoente);
+            // Console.WriteLine("Expoente: " + expoente);
+            // Console.WriteLine("Binário expoente: " + binarioExpoente);
 
             // NORMALIZAÇÂO
             if (num > 0)
@@ -97,15 +97,78 @@ namespace Calculadora_IEE754
                 binarioFinal = "1" + binarioExpoente + binarioInteiro.Remove(0, 1) + binarioDecimal;
             }
 
+            // Console.WriteLine("Final: " + binarioFinal);
+
+            // CONVERTER BINARIO PARA HEXADECIMAL
             string aux = binarioFinal;
-            Console.WriteLine("Final: " + binarioFinal);
-            Console.WriteLine("aux: " + aux.Substring(28, 31));
+            string hex = "";
+            for(int j = 0; j < 32; j = j + 4)
+            {
+                string hexBinario = aux.Substring(j, 4);
 
-            // for(int j = 0; j < 8; j++)
-            // {
-                
+                switch (hexBinario)
+                {
+                    case "0000":
+                        hex = hex + "0";
+                    break;
+                    case "0001":
+                        hex = hex + "1";
+                    break;
+                    case "0010":
+                        hex = hex + "2";
+                    break;
+                    case "0011":
+                        hex = hex + "3";
+                    break;
+                    case "0100":
+                        hex = hex + "4";
+                    break;
+                    case "0101":
+                        hex = hex + "5";
+                    break;
+                    case "0110":
+                        hex = hex + "6";
+                    break;
+                    case "0111":
+                        hex = hex + "7";
+                    break;
+                    case "1000":
+                        hex = hex + "8";
+                    break;
+                    case "1001":
+                        hex = hex + "9";
+                    break;
+                    case "1010":
+                        hex = hex + "A";
+                    break;
+                    case "1011":
+                        hex = hex + "B";
+                    break;
+                    case "1100":
+                        hex = hex + "C";
+                    break;
+                    case "1101":
+                        hex = hex + "D";
+                    break;
+                    case "1110":
+                        hex = hex + "E";
+                    break;
+                    case "1111":
+                        hex = hex + "F";
+                    break;
+                }
+            }
 
-            // }
+            string hexInvertido = "";
+            for(int k = 0; k < 8; k = k + 2)
+            {
+                hexInvertido = hex.Substring(k, 2) + " " + hexInvertido;
+            }
+
+            // Console.WriteLine("Hexadecimal: " + hex);
+            // Console.WriteLine("Hexadecimal invertido: " + hexInvertido);
+
+            Console.WriteLine("\t32 bits ==> " + hexInvertido);
         }
     }
 }
