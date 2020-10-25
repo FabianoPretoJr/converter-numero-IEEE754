@@ -1,0 +1,13 @@
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.exe
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.deps.json
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.runtimeconfig.json
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.runtimeconfig.dev.json
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.dll
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\bin\Debug\netcoreapp3.1\Calculadora-IEE754.pdb
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.csprojAssemblyReference.cache
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.AssemblyInfoInputs.cache
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.AssemblyInfo.cs
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.csproj.CoreCompileInputs.cache
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.dll
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.pdb
+C:\Users\Fabiano\Desktop\Junior\Calculadora-IEE754\obj\Debug\netcoreapp3.1\Calculadora-IEE754.genruntimeconfig.cache
